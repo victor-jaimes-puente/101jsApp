@@ -34,6 +34,7 @@ function addToDone(message) {
 
 // The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_defined to understand this error message.
+var doingJSRightNow = true;
 assert(doingJSRightNow, true, "Exercise 0"); 
 
 
