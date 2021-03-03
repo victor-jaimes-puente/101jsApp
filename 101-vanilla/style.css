@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: cornsilk;
+    background-color: rgb(0, 0, 0);
+    color: skyblue;
 }
 
 header {
@@ -39,7 +40,7 @@ h1 {
 }
 
 .correct {
-    background-color: thistle;
+    background-color: rgb(0, 0, 0);
 }
 
 section h2 {
