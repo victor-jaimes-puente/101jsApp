@@ -286,7 +286,11 @@ addToDone("Exercise 14 is correct.")
 
 // Exercise 15
 // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
-
+function isEven(number){
+    if(number%2 !== 0){
+        return false;
+    } else return true;
+}
 assert(isEven(2), true, "Exercise 15");
 assert(isEven(positiveOddNumber), false, "Exercise 15");
 assert(isEven(positiveEvenNumber), true, "Exercise 15");
