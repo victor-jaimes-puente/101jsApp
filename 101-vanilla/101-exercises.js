@@ -205,8 +205,10 @@ assert(plusTwo(0), 2, "zero plus 2 is two")
 
 // Exercise 11
 // Write a function definition for a function named addOne that takes in a number and returns that number plus one
-
-
+function addOne(number){
+    return number + 1;
+}
+// console.log(addOne(5));
 
 assert(addOne(2), 3, "Exercise 11");
 assert(addOne(0), 1, "Exercise 11");
@@ -222,8 +224,16 @@ addToDone("Exercise 11 is correct.")
 // Is 5 positive? Is 0.25 positive? Is 0.00001 positive? Is -0.001 positive? 
 // Is zero itself positive? What about infinity? What about negative infinity?
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators for guidance with JS comparison operators.
-
-
+function isPositive(number){
+    if (Math.sign(number) === 1){
+        return true;
+    } else if (Math.sign(number) === -1){
+        return false; 
+    } else {
+        return false;
+    }
+    
+}
 
 assert(isPositive(0.25), true, "Exercise 12");
 assert(isPositive(0.00001), true, "Exercise 12");
