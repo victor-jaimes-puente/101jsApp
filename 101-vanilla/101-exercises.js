@@ -250,7 +250,18 @@ addToDone("Exercise 12 is correct.")
 
 // Exercise 13
 // Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
-
+function isNegative(number){
+    switch(Math.sign(number)) {
+        case -1:
+          return true
+          break;
+        case 1:
+          return false
+          break;
+        default:
+         false
+      }
+}
 
 
 assert(isNegative(positiveOddNumber), false, "Exercise 13");
