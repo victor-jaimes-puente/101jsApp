@@ -315,8 +315,11 @@ addToDone("Exercise 16 is correct.")
 
 // Exercise 17
 // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
-
-
+function isPositiveOdd(number){
+    if(isPositive(number) && isOdd(number)){
+        return true
+    } else return false;
+}
 
 assert(isPositiveOdd(3), true, "Exercise 17");
 assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
