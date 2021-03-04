@@ -331,7 +331,12 @@ addToDone("Exercise 17 is correct.")
 
 // Exercise 18
 // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
-
+function isPositiveEven(number){
+    console.log('Exercise 18');
+    if(isPositive(number)&&isEven(number)){
+        return true
+    } else return false
+}
 assert(isPositiveEven(4), true, "Exercise 18" );
 assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
 assert(isPositiveEven(positiveEvenNumber), true, "Exercise 18");
@@ -342,7 +347,11 @@ addToDone("Exercise 18 is correct.")
 
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
-
+function isNegativeOdd(number){
+    if(isNegative(number) && isOdd(number)){
+        return true;
+    } else return false;
+}
 assert(isNegativeOdd(-3), true, "Exercise 19" );
 assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
 assert(isNegativeOdd(positiveEvenNumber), false, "Exercise 19");
