@@ -72,7 +72,9 @@ addToDone("Exercise 4 is correct.");
 // Exercise 5
 // Add the string "tomato" to the end of the fruits array. 
 // *Hint* Recommend finding and using a built-in JS operation to add to an array rather than recreating the array.
-console.log(fruits);
+// console.log(fruits);
+fruits.push('tomato');
+// console.log(fruits);
 assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "Exercise 5");
 addToDone("Exercise 5 is correct");
 
@@ -80,7 +82,9 @@ addToDone("Exercise 5 is correct");
 // add the string "tomato" onto the end of the vegetables array. 
 // Recommend using the built-in JS operation to add to an array.
 
-
+// console.log(vegetables);
+vegetables.push('tomato');
+// console.log(vegetables);
 assert(vegetables,["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"], "Exercise 6");
 addToDone("Exercise 6 is correct")
 
@@ -88,8 +92,7 @@ addToDone("Exercise 6 is correct")
 // Exercise 7
 // Given the array of numbers defined below, reverse the array of numbers that you created above. 
 var someNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-
+someNumbers.reverse();
 assert(someNumbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7")
 addToDone("Exercise 7 is correct")
 
@@ -97,7 +100,7 @@ addToDone("Exercise 7 is correct")
 
 // Exercise 8
 // Sort the vegetables in alphabetical order. Recommend finding a way to sort the array with a built-in method
-
+vegetables.sort();
 assert(vegetables, ['broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 8")
 addToDone("Exercise 8 is correct.")
 
@@ -105,7 +108,8 @@ addToDone("Exercise 8 is correct.")
 
 // Exercise 9
 // Write the code necessary to sort the fruits in reverse alphabetical order
-
+fruits.sort();
+fruits.reverse();
 assert(fruits, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana'], "Exercise 9")
 addToDone("Exercise 9 is correct.")
 
@@ -114,7 +118,8 @@ addToDone("Exercise 9 is correct.")
 // Write the code necessary to produce a single array that holds all fruits then all vegetables in the order as they were sorted above.
 // Assign the result to a variable named fruitsAndVeggies. 
 // *hint* the search engine search here would be "how to combine two arrays in JavaScript", for example.
-
+console.log(fruits);
+console.log(vegetables);
 assert(fruitsAndVeggies, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana', 'broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 10")
 addToDone("Exercise 10 is correct")
 
