@@ -455,7 +455,11 @@ addToDone("Exercise 25 is correct.")
 
 // Exercise 26
 // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
-
+function isMultipleOfThree(number){
+    if(number%3===0){
+        return true;
+    } else return false; 
+}
 assert(isMultipleOfThree(3), true, "Exercise 26");
 assert(isMultipleOfThree(15), true, "Exercise 26");
 assert(isMultipleOfThree(9), true, "Exercise 26");
@@ -468,7 +472,11 @@ addToDone("Exercise 26 is correct.")
 
 // Exercise 27
 // Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
-
+function isMultipleOfFive(number){
+    if(number%5===0){
+        return true;
+    } else return false; 
+}
 assert(isMultipleOfFive(3), false, "Exercise 27");
 assert(isMultipleOfFive(15), true, "Exercise 27");
 assert(isMultipleOfFive(9), false, "Exercise 27");
@@ -480,7 +488,11 @@ addToDone("Exercise 27 is correct.")
 
 // Exercise 28
 // Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
-
+function isMultipleOfBothThreeAndFive(number){
+    if(isMultipleOfThree(number) && isMultipleOfFive(number)){
+        return true;
+    } else return false;
+}
 assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
@@ -493,7 +505,9 @@ addToDone("Exercise 28 is correct.")
 
 // Exercise 29
 // Write a function definition named square that takes in a number and returns the number times itself.
-
+function square(number){
+    return number*number;
+}
 assert(square(3), 9, "Exercise 29");
 assert(square(2), 4, "Exercise 29");
 assert(square(9), 81, "Exercise 29");
@@ -504,7 +518,9 @@ addToDone("Exercise 29 is correct.")
 
 // Exercise 30
 // Write a function definition named add that takes in two numbers and returns the sum.
-
+function add(a,b){
+    return a+=b;
+}
 
 assert(add(3, 2), 5, "Exercise 30");
 assert(add(10, -2), 8, "Exercise 30");
@@ -515,7 +531,9 @@ addToDone("Exercise 30 is correct.")
 
 // Exercise 31
 // Write a function definition named cube that takes in a number and returns the number times itself, times itself.
-
+function cube(number){
+    return (number*number)*number;
+}
 assert(cube(3), 27, "Exercise 31");
 assert(cube(2), 8, "Exercise 31");
 assert(cube(5), 125, "Exercise 31");
@@ -526,7 +544,9 @@ addToDone("Exercise 31 is correct.")
 
 // Exercise 32
 // Write a function definition named squareRoot that takes in a number and returns the square root of the provided number
-
+function squareRoot(number){
+    return Math.sqrt(number);
+}
 
 assert(squareRoot(4), 2.0, "Exercise 32");
 assert(squareRoot(64), 8.0, "Exercise 32");
@@ -539,7 +559,9 @@ addToDone("Exercise 32 is correct.")
 // Exercise 33
 // Write a function definition named subtract that takes in two numbers and returns the first minus the second argument.
 
-
+function subtract(a,b){
+    return a-=b;
+}
 assert(subtract(8, 6), 2, "Exercise 33");
 assert(subtract(27, 4), 23, "Exercise 33");
 assert(subtract(12, 2), 10, "Exercise 33");
@@ -549,7 +571,9 @@ addToDone("Exercise 33 is correct.")
 
 // Exercise 34
 // Write a function definition named multiply that takes in two numbers and returns the first times the second argument.
-
+function multiply(a,b){
+    return a*b;
+}
 assert(multiply(2, 1), 2, "Exercise 34");
 assert(multiply(3, 5), 15, "Exercise 34");
 assert(multiply(5, 2), 10, "Exercise 34");
@@ -560,7 +584,9 @@ addToDone("Exercise 34 is correct.")
 // Exercise 35
 // Write a function definition named divide that takes in two numbers and returns the first argument divided by the second argument.
 
-
+function divide(a,b){
+    return a/b;
+}
 assert(divide(27, 9), 3, "Exercise 35");
 assert(divide(15, 3), 5, "Exercise 35");
 assert(divide(5, 2), 2.5, "Exercise 35");
