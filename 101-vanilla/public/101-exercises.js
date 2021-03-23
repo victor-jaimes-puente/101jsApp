@@ -708,15 +708,14 @@ addToDone("Exercise 43 is correct.")
 
 // Exercise 44
 // Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
-function hasVowels(string){
-    var arrString = Array.from(string.toLowerCase());
-    console.log(arrString);
-    arrString.forEach(element => {
-        if(isVowel(element)){
-            
-        }
-    });
+var hasVowels = string => {
+    console.log(string)
+    var arrayed = Array.from(string.toLowerCase());
+    console.log(arrayed);
+    arrayed.forEach(letter => {(isVowel(letter))
+})
 }
+    
 assert(hasVowels("banana"), true, "Exercise 44");
 assert(hasVowels("ubuntu"), true, "Exercise 44");
 assert(hasVowels("QQQQ"), false, "Exercise 44");
@@ -726,6 +725,20 @@ addToDone("Exercise 44 is correct.")
 
 // Exercise 45
 // Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
+
+// var countVowels = string => {
+//     var arrString = Array.from(string.toLowerCase());
+//     console.log(arrString);
+//     console.log('Problem 45 ^^');
+//     var vowels = 0;
+//     arrString.forEach(element => {
+//         if(isVowel(element)){
+//             vowels++;
+//             console.log(`${vowels}`)
+//         }
+//         return vowels
+//     })
+// }
 
 assert(countVowels("banana"), 3, "Exercise 45");
 assert(countVowels("ubuntu"), 3, "Exercise 45");
